@@ -1,6 +1,6 @@
 # face_recognition
 
-#Instalação no Ubuntu
+## Instalação no Ubuntu
 
 1. Instale os seguintes requerimentos:
 ```
