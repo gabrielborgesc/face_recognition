@@ -24,7 +24,7 @@ pip3 install pipenv
 
 4. Instale as dependências no virtualenv do projeto pelo pipenv
 ```
-pipenv update
+pipenv update --python python3
 ```
 5. Acesse o virtualenv para executar o projeto
 ```
