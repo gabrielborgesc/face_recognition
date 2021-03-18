@@ -15,7 +15,7 @@ predictor = dlib.shape_predictor("files/shape_predictor/shape_predictor_68_face_
 face_encoder = dlib.face_recognition_model_v1("files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat")
 
 # read the image
-img = cv2.imread("files/images/empe.jpeg")
+img = cv2.imread("files/images/teste.jpeg")
 img = imutilsRotate(img, 0)
 
 # Convert image into grayscale
@@ -37,13 +37,8 @@ for face in faces:
     # landmarks = predictor(image=gray_image, box=face)
     landmarks = predictor(img_rgb, face)
     encodings = np.array(face_encoder.compute_face_descriptor(img_rgb, landmarks, 1))
-    # print('encodings', encodings)
+    print('encodings', encodings)
 
-    firstPoint = landmarks.part(30)
-    print('30', firstPoint)
-    secondPoint = landmarks.part(42)
-    print('42', secondPoint)
-    print('30 -> 42: ', secondPoint - firstPoint)
     # x = firstPoint.x
     # y=firstPoint.y
     # angle = -7
