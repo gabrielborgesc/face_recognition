@@ -1,6 +1,7 @@
 import psycopg2
 import os
 import queries as q
+import json
 
 if "PG_HOST" in os.environ:
 	host = os.environ["PG_HOST"]
@@ -37,9 +38,14 @@ def get_user(user_id):
 
 def get_user_passwords(user_id):
 	cur.execute(q.get_user_passwords, { "user_id": user_id })
-	result = cur.fetchone()
+	result = cur.fetchall()
 	return result
 
 
 def add_password(user_id, password, description):
 	cur.execute(q.add_password, { "user_id": user_id, "password": password, "description": description })
+	conn.commit()
+
+def add_user(name, encoded):
+	cur.execute(q.add_user, { "name": name, "encoded_array": json.dumps(encoded) })
+	conn.commit()
