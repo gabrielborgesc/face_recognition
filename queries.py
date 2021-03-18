@@ -6,6 +6,10 @@ get_user_by_id = """
 	SELECT id, name, encoded_array FROM USERS WHERE id = %(id)s
 """
 
+get_user_by_name = """
+	SELECT id, name, encoded_array FROM USERS WHERE name = %(name)s
+"""
+
 get_user_passwords = """
 	SELECT description, password FROM PASSWORDS WHERE user_id = %(user_id)s 
 """

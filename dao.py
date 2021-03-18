@@ -31,10 +31,16 @@ def get_all_users():
 	result = cur.fetchall()
 	return result
 
-def get_user(user_id):
-	cur.execute(q.get_user_by_id, { "id": user_id })
+# def get_user(user_id):
+# 	cur.execute(q.get_user_by_id, { "id": user_id })
+# 	result = cur.fetchone()
+# 	return result
+
+def get_user(name):
+	cur.execute(q.get_user_by_name, { "name": name })
 	result = cur.fetchone()
 	return result
+
 
 def get_user_passwords(user_id):
 	cur.execute(q.get_user_passwords, { "user_id": user_id })
