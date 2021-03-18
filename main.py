@@ -5,7 +5,7 @@ from encodingsGenerator import EncodingsGenerator
 
 encoder = EncodingsGenerator()
 
-img = cv2.imread("files/images/empe.jpeg")
+img = cv2.imread("files/images/pai3.jpeg")
 # img = face_recognition.load_image_file("files/images/foto1.jpeg")
 # print('encondings1')
 encodings1 = encoder.generateEncoding(img)
