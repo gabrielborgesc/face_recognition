@@ -19,17 +19,17 @@ git clone https://github.com/gabrielborgesc/face_recognition.git
 
 3. Instale o gerenciador de dependências pipenv:
 ```
-pip3 install pipenv
+sudo pip3 install pipenv
 ```
-
-4. Instale as dependências no virtualenv do projeto pelo pipenv
-```
-pipenv update --python python3
-```
-5. Acesse o virtualenv para executar o projeto
+4. Crie o virtualenv
 ```
 pipenv shell
 ```
+5. Instale as dependências no virtualenv do projeto pelo pipenv
+```
+pipenv update --python python3
+```
+
 6. Testando:
 ```
 python3 test.py
