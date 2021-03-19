@@ -43,8 +43,9 @@ bunzip2 dlib_face_recognition_resnet_model_v1.dat.bz2
 ```
 Após isso, coloque-os na pasta files/shape_predictor a partir da raiz do projeto.
 
-Por fim, utilize qualquer, nomeando-a como test.jpeg (ou troque o nome do arquivo no código) e coloque-a na pasta files/images
+Por fim, utilize qualquer imagem, nomeando-a como test.jpeg (ou troque o nome do arquivo no código) e coloque-a na pasta files/images
 
 ```
 python3 test.py
 ```
+Ao rodar esse arquivo, deve aparecer a foto com a faces mapeadas.
