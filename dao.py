@@ -22,8 +22,13 @@ if "PG_PASSWORD" in os.environ:
 	password = os.environ["PG_PASSWORD"]
 else:
 	password = "postgres"
+	
+if "PG_PORT" in os.environ:
+	port = os.environ["PG_PORT"]
+else:
+	port = 5432
 
-conn = psycopg2.connect(host=host, database=database, user=user, password=password)
+conn = psycopg2.connect(host=host, database=database, user=user, password=password, port=port)
 cur = conn.cursor()
 
 def get_all_users():
