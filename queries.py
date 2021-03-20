@@ -1,5 +1,5 @@
 get_users = """
-	SELECT id, name FROM USERS
+	SELECT id, name, encoded_array FROM USERS
 """
 
 get_user_by_id = """
