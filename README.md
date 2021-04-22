@@ -33,7 +33,7 @@ pipenv update --python python3
 6. Testando: 
 Repare que no arquivo test.py há referência para os arquivos files/shape_predictor/shape_predictor_68_face_landmarks.dat, files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat e files/images/teste.jpeg.
 
-Os arquivos shape_predictor_68_face_landmarks.dat e dlib_face_recognition_resnet_model_v1.dat são de treinamento para o algoritmo de Inteligência Artificial e não sobrem para o git devido seu tamanho. Eles podem ser baixados na raiz de https://github.com/davisking/dlib-models.
+Os arquivos shape_predictor_68_face_landmarks.dat e dlib_face_recognition_resnet_model_v1.dat são de treinamento para o algoritmo de Inteligência Artificial e não são versionados devido seu tamanho. Eles podem ser baixados na raiz de https://github.com/davisking/dlib-models.
 
 Após realizar o download de ambos, vá com o terminal à pasta em que foram baixados e descompacte-os:
 
