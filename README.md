@@ -48,4 +48,4 @@ Por fim, utilize qualquer imagem, nomeando-a como test.jpeg (ou troque o nome do
 ```
 python3 test.py
 ```
-Ao rodar esse arquivo, deve aparecer a foto com a faces mapeadas.
+Ao rodar esse arquivo, deve aparecer a foto com a faces mapeada.
