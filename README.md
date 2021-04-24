@@ -31,7 +31,7 @@ pipenv update --python python3
 ```
 
 6. Testando: 
-Repare que no arquivo test.py há referência para os arquivos files/shape_predictor/shape_predictor_68_face_landmarks.dat, files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat e files/images/teste.jpeg.
+Repare que no arquivo face_encoding_show_image_test.py há referência para os arquivos files/shape_predictor/shape_predictor_68_face_landmarks.dat, files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat e files/images/teste.jpeg.
 
 Os arquivos shape_predictor_68_face_landmarks.dat e dlib_face_recognition_resnet_model_v1.dat são de treinamento para o algoritmo de Inteligência Artificial e não são versionados devido seu tamanho. Eles podem ser baixados na raiz de https://github.com/davisking/dlib-models.
 
@@ -46,6 +46,6 @@ Após isso, coloque-os na pasta files/shape_predictor a partir da raiz do projet
 Por fim, utilize qualquer imagem, nomeando-a como test.jpeg (ou troque o nome do arquivo no código) e coloque-a na pasta files/images
 
 ```
-python3 test.py
+python3 face_encoding_show_image_test.py
 ```
 Ao rodar esse arquivo, deve aparecer a foto com a faces mapeada.
