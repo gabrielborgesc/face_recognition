@@ -4,7 +4,7 @@ from imutils import rotate as imutilsRotate
 from scipy.ndimage.interpolation import rotate as scipyRotate
 import numpy as np
 
-img = cv2.imread("files/images/teste.jpeg")
+img = cv2.imread("files/images/fp2.jpeg")
 
 # Load the detector
 detector = dlib.get_frontal_face_detector()
