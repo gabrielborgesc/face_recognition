@@ -15,7 +15,7 @@ predictor = dlib.shape_predictor("files/shape_predictor/shape_predictor_68_face_
 face_encoder = dlib.face_recognition_model_v1("files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat")
 
 # read the image
-img = cv2.imread("files/images/antero.jpeg")
+img = cv2.imread("files/images/teste.jpg")
 img = imutilsRotate(img, 0)
 
 # Convert image into grayscale

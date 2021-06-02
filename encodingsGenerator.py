@@ -12,20 +12,21 @@ class EncodingsGenerator:
     def generateEncoding(self, img):
         # Load the detector
         detector = dlib.get_frontal_face_detector()
-
+        print("1")
         # Load the predictor
         predictor = dlib.shape_predictor("files/shape_predictor/shape_predictor_68_face_landmarks.dat")
-
+        print("2")
         # Instancia o objeto responsável pela codificação do rosto baseado no modelo de aprendizado
         face_encoder = dlib.face_recognition_model_v1("files/shape_predictor/dlib_face_recognition_resnet_model_v1.dat")
-
+        print("3")
         #change img to rbg
         img_np_array = np.array(img)
         img_rgb = img_np_array[:, :, ::-1]
-
+        print("4")
         # Use detector to find rectangle
         faces = detector(img_rgb, 0)
-
+        print("faces aaaa")
+        print(faces)
         for face in faces:
             x1 = face.left() # left point
             y1 = face.top() # top point
