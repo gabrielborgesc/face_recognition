@@ -1,17 +1,16 @@
 import dao
-from encodingsGenerator import EncodingsGenerator
+import face_recognition
 from picamera import PiCamera
-import cv2
+import serivce as service
 
-#camera = PiCamera()
-encoder = EncodingsGenerator()
+camera = PiCamera()
 
-#camera.capture('tmp/image.jpg')
+camera.capture('tmp/image.jpg')
 #print("capiturasse")
-img = cv2.imread("files/teste.jpg")
+img = face_recognition.load_image_file("tmp/image.jpg")
 print("lesse")
-encodings = encoder.generateEncoding(img)
+encodings = face_recognition.face_encodings(img)[0]
 print("encodasse")
 print(encodings)
-dao.add_user("Bernardo", encodings)
+dao.add_user("bernardo", service.npArrayToJson(encodings))
 print("salvasse")

@@ -22,7 +22,7 @@ if "PG_PASSWORD" in os.environ:
 	password = os.environ["PG_PASSWORD"]
 else:
 	password = "postgres"
-	
+
 if "PG_PORT" in os.environ:
 	port = os.environ["PG_PORT"]
 else:
