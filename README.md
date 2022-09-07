@@ -48,4 +48,4 @@ Por fim, utilize qualquer imagem, nomeando-a como test.jpeg (ou troque o nome do
 ```
 python3 face_encoding_show_image_test.py
 ```
-Ao rodar esse arquivo, deve aparecer a foto com a faces mapeada.
+Ao rodar esse arquivo, deve aparecer a foto com a face mapeada.
